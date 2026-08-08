@@ -1,14 +1,36 @@
 <header class="masthead">
   <div class="wrap masthead__inner">
-    <a class="masthead__brand" href="/">{{ site.name }}</a>
-    <div class="masthead__tagline">{{ site.tagline }}</div>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
-      <a href="/film/">Film</a>
+
+    <a class="masthead__brand" href="/">
+      {{ site.name }}
+    </a>
+
+    <div class="masthead__tagline">
+      {{ site.tagline }}
+    </div>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="primary-nav"
+    >
+      Menu
+    </button>
+
+    <nav
+      class="primary-nav"
+      id="primary-nav"
+      aria-label="Primary"
+    >
+      <a href="/#latest">Latest</a>
+      <a href="/film/">Films</a>
       <a href="/books/">Books</a>
+      <a href="/music/">Music</a>
       <a href="/notebook/">Notebook</a>
-      <a href="/shelf/">The Shelf</a>
+      <a href="/shelf/">Shelf</a>
       <a href="/about/">About</a>
     </nav>
+
   </div>
 </header>

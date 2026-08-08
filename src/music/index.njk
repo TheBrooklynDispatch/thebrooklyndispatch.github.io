@@ -1,0 +1,44 @@
+---
+layout: base.njk
+title: Music
+description: Essays, notes and recommendations on albums, artists, live music and listening.
+---
+
+<section class="section-intro wrap">
+  <div class="eyebrow">Section</div>
+
+  <h1>Music</h1>
+
+  <p>
+    Essays, notes and recommendations on albums, artists,
+    live music and listening.
+  </p>
+</section>
+
+<section class="home-section wrap">
+  <div class="story-grid">
+    {% for article in collections.articles %}
+      {% if article.data.section == "Music" %}
+        <article class="story-card">
+          <div class="meta-label">
+            {{ article.data.format }}
+          </div>
+
+          <h3>
+            <a href="{{ article.url }}">
+              {{ article.data.title }}
+            </a>
+          </h3>
+
+          {% if article.data.dek %}
+            <p>{{ article.data.dek }}</p>
+          {% endif %}
+
+          <span class="story-date">
+            {{ article.date | readableDate }}
+          </span>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
