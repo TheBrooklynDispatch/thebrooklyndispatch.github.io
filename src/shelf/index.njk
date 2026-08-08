@@ -1,37 +1,108 @@
 ---
 layout: base.njk
-title: Shelf
+title: On the Shelf
 description: Monthly selections from The Brooklyn Dispatch.
+permalink: /shelf/
 ---
 
-<section class="wrap">
+{% set latest = collections.shelf | reverse | first %}
 
-  {% set latest = collections.shelf | reverse | first %}
+{% if latest %}
 
-  {{ latest.templateContent | safe }}
+{{ latest.templateContent | safe }}
+
+<section class="archive-section">
+
+  <div class="site-shell">
+
+    <div class="section-heading">
+      <h2>Archive</h2>
+    </div>
+
+    <div class="archive-list">
+
+      {% for item in collections.shelf | reverse %}
+
+        <a
+          class="archive-row"
+          href="{{ item.url }}"
+        >
+          <span>{{ item.data.month }} {{ item.data.year }}</span>
+          <span>→</span>
+        </a>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
 
 </section>
 
-<section class="archive-section wrap">
+{% else %}
 
-  <div class="section-heading">
-    <h2>Archive</h2>
+<section class="page-intro">
+
+  <div class="site-shell">
+
+    <h1>On the Shelf</h1>
+
+    <p>No editions have been published yet.</p>
+
   </div>
 
-  <div class="archive-list">
+</section>
 
-    {% for item in collections.shelf | reverse %}
+{% endif %}---
+layout: base.njk
+title: On the Shelf
+description: Monthly selections from The Brooklyn Dispatch.
+permalink: /shelf/
+---
 
-      <a
-        class="archive-row"
-        href="{{ item.url }}"
-      >
+{% set latest = collections.shelf | reverse | first %}
+
+{% if latest %}
+
+{{ latest.templateContent | safe }}
+
+<section class="archive-section">
+
+  <div class="site-shell">
+
+    <div class="section-heading">
+      <h2>Archive</h2>
+    </div>
+
+    <div class="archive-list">
+
+      {% for item in collections.shelf | reverse %}
+
+      <a class="archive-row" href="{{ item.url }}">
         <span>{{ item.data.month }} {{ item.data.year }}</span>
         <span>→</span>
       </a>
 
-    {% endfor %}
+      {% endfor %}
+
+    </div>
 
   </div>
 
 </section>
+
+{% else %}
+
+<section class="page-intro">
+
+  <div class="site-shell">
+
+    <h1>On the Shelf</h1>
+
+    <p>No editions have been published yet.</p>
+
+  </div>
+
+</section>
+
+{% endif %}
