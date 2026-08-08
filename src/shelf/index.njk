@@ -1,19 +1,37 @@
 ---
 layout: base.njk
-title: The Shelf
-description: Four things worth spending time with right now.
+title: Shelf
+description: Monthly selections from The Brooklyn Dispatch.
 ---
-<section class="section-intro wrap">
-  <div class="eyebrow">Monthly recommendations</div>
-  <h1>The Shelf</h1>
-  <p>Four things worth spending time with right now. No rankings, no scores, no algorithm.</p>
+
+<section class="wrap">
+
+  {% set latest = collections.shelf | reverse | first %}
+
+  {{ latest.templateContent | safe }}
+
 </section>
 
-<section class="home-section wrap">
-  <div class="shelf-grid shelf-grid--page">
-    <article class="shelf-item"><span class="meta-label">Film</span><strong>Still Walking</strong><span>Hirokazu Kore-eda, 2008</span><p>A family drama of tiny gestures and accumulated feeling.</p></article>
-    <article class="shelf-item"><span class="meta-label">Book</span><strong>The Rings of Saturn</strong><span>W. G. Sebald</span><p>A walk that keeps turning into something larger.</p></article>
-    <article class="shelf-item"><span class="meta-label">Album</span><strong>Blue</strong><span>Joni Mitchell</span><p>A reminder that directness can be its own kind of sophistication.</p></article>
-    <article class="shelf-item"><span class="meta-label">Place</span><strong>Metrograph</strong><span>New York</span><p>Go for the programming. Stay for the feeling of being somewhere built for films.</p></article>
+<section class="archive-section wrap">
+
+  <div class="section-heading">
+    <h2>Archive</h2>
   </div>
+
+  <div class="archive-list">
+
+    {% for item in collections.shelf | reverse %}
+
+      <a
+        class="archive-row"
+        href="{{ item.url }}"
+      >
+        <span>{{ item.data.month }} {{ item.data.year }}</span>
+        <span>→</span>
+      </a>
+
+    {% endfor %}
+
+  </div>
+
 </section>

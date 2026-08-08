@@ -1,0 +1,44 @@
+<article class="shelf-edition">
+
+  <header class="shelf-header">
+
+    <div class="eyebrow">
+      On the Shelf
+    </div>
+
+    <h1>
+      {{ month }} {{ year }}
+    </h1>
+
+  </header>
+
+  <div class="article-body">
+
+    {{ content | safe }}
+
+    <div class="edition-meta">
+
+  <div>
+    <span class="meta-label">Published</span>
+    <p>{{ month }} {{ year }}</p>
+  </div>
+
+  <div>
+    <span class="meta-label">Last updated</span>
+    <p>{{ lastUpdated }}</p>
+  </div>
+
+  <div>
+    <span class="meta-label">Credits</span>
+    <p>
+      <a href="/about/image-credits/">
+        Image credits
+      </a>
+    </p>
+  </div>
+
+</div>
+
+  </div>
+
+</article>

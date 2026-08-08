@@ -1410,3 +1410,39 @@ body.reading-mode .reading-mode-toggle {
     height: 130px;
   }
 }
+
+.article-body figure {
+
+    margin: 2rem 0;
+
+}
+
+.article-body figure img {
+
+    width: 100%;
+
+    display: block;
+
+    border: 1px solid var(--line);
+
+}
+
+.article-body figcaption {
+
+    margin-top: .75rem;
+
+    color: var(--muted);
+
+    font-size: .9rem;
+
+    line-height: 1.4;
+
+}
+
+.section-divider {
+
+    margin: 3.5rem 0;
+
+    border-top: 1px solid var(--line);
+
+}
