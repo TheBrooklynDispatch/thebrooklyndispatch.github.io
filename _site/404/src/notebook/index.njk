@@ -1,0 +1,25 @@
+---
+layout: base.njk
+title: Notebook
+description: Shorter observations, questions and unfinished thoughts.
+---
+<section class="section-intro wrap">
+  <div class="eyebrow">Section</div>
+  <h1>Notebook</h1>
+  <p>Shorter observations, questions and unfinished thoughts.</p>
+</section>
+
+<section class="home-section wrap">
+  <div class="story-grid">
+    {% for article in collections.articles %}
+      {% if article.data.section == "Notebook" %}
+      <article class="story-card">
+        <div class="meta-label">{{ article.data.format }}</div>
+        <h3><a href="{{ article.url }}">{{ article.data.title }}</a></h3>
+        <p>{{ article.data.dek }}</p>
+        <span class="story-date">{{ article.date | readableDate }}</span>
+      </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

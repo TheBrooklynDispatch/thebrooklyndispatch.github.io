@@ -1,0 +1,46 @@
+---
+layout: base.njk
+---
+<article>
+  <header class="article-header wrap">
+    <div class="eyebrow">{{ format or section }}</div>
+    <h1>{{ title }}</h1>
+    {% if dek %}<p class="article-dek">{{ dek }}</p>{% endif %}
+    <div class="article-meta">
+      <span>By {{ author or site.editor }}</span>
+      <span>{{ page.date | readableDate }}</span>
+      {% if readingTime %}<span>{{ readingTime }} min read</span>{% endif %}
+    </div>
+    {% if trails %}
+    <div class="trail-list">
+      {% for trail in trails %}<span>{{ trail }}</span>{% endfor %}
+    </div>
+    {% endif %}
+  </header>
+
+  {% if hero %}
+  <figure class="article-hero wrap">
+    <img src="{{ hero }}" alt="{{ heroAlt or '' }}">
+    {% if heroCaption %}<figcaption>{{ heroCaption }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
+
+  <div class="article-body">
+    {{ content | safe }}
+
+    {% if whereNext %}
+    <section class="where-next">
+      <div class="eyebrow">Where Next</div>
+      <div class="where-next__grid">
+        {% for item in whereNext %}
+        <a class="where-next__item" href="{{ item.url or '#' }}">
+          <span class="meta-label">{{ item.type }}</span>
+          <strong>{{ item.title }}</strong>
+          {% if item.note %}<span>{{ item.note }}</span>{% endif %}
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+  </div>
+</article>
