@@ -1,19 +1,18 @@
 ---
 layout: base.njk
 title: On the Shelf
-description: Monthly selections from The Brooklyn Dispatch.
+description: Monthly recommendations from The Brooklyn Dispatch.
 permalink: /shelf/
+eleventyExcludeFromCollections: true
 ---
 
 {% set latest = collections.shelf | reverse | first %}
 
 {% if latest %}
 
-{{ latest.templateContent | safe }}
+  {{ latest.templateContent | safe }}
 
-<section class="archive-section">
-
-  <div class="site-shell">
+  <section class="archive-section wrap">
 
     <div class="section-heading">
       <h2>Archive</h2>
@@ -23,10 +22,7 @@ permalink: /shelf/
 
       {% for item in collections.shelf | reverse %}
 
-        <a
-          class="archive-row"
-          href="{{ item.url }}"
-        >
+        <a class="archive-row" href="{{ item.url }}">
           <span>{{ item.data.month }} {{ item.data.year }}</span>
           <span>→</span>
         </a>
@@ -35,74 +31,18 @@ permalink: /shelf/
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 {% else %}
 
-<section class="page-intro">
-
-  <div class="site-shell">
+  <section class="section-intro wrap">
 
     <h1>On the Shelf</h1>
 
-    <p>No editions have been published yet.</p>
+    <p>
+      No Shelf editions have been published yet.
+    </p>
 
-  </div>
-
-</section>
-
-{% endif %}---
-layout: base.njk
-title: On the Shelf
-description: Monthly selections from The Brooklyn Dispatch.
-permalink: /shelf/
----
-
-{% set latest = collections.shelf | reverse | first %}
-
-{% if latest %}
-
-{{ latest.templateContent | safe }}
-
-<section class="archive-section">
-
-  <div class="site-shell">
-
-    <div class="section-heading">
-      <h2>Archive</h2>
-    </div>
-
-    <div class="archive-list">
-
-      {% for item in collections.shelf | reverse %}
-
-      <a class="archive-row" href="{{ item.url }}">
-        <span>{{ item.data.month }} {{ item.data.year }}</span>
-        <span>→</span>
-      </a>
-
-      {% endfor %}
-
-    </div>
-
-  </div>
-
-</section>
-
-{% else %}
-
-<section class="page-intro">
-
-  <div class="site-shell">
-
-    <h1>On the Shelf</h1>
-
-    <p>No editions have been published yet.</p>
-
-  </div>
-
-</section>
+  </section>
 
 {% endif %}

@@ -1,44 +1,106 @@
-<article class="shelf-edition">
+---
+layout: base.njk
+---
 
-  <header class="shelf-header">
+<section class="shelf-intro">
 
-    <div class="eyebrow">
-      On the Shelf
-    </div>
+  <p class="shelf-kicker">
+    {{ month }} {{ year }}
+  </p>
 
-    <h1>
-      {{ month }} {{ year }}
-    </h1>
+  <h1>On the Shelf</h1>
 
-  </header>
+  <p class="shelf-description">
+    {{ intro }}
+  </p>
 
-  <div class="article-body">
+</section>
 
-    {{ content | safe }}
 
-    <div class="edition-meta">
+<div class="shelf-entry-grid">
+
+  {% for pick in picks %}
+
+    <article class="shelf-entry-card">
+
+      <div class="meta-label">
+        {{ pick.category }}
+      </div>
+
+      <figure>
+        <img
+          src="{{ pick.image }}"
+          alt="{{ pick.alt }}">
+      </figure>
+
+      <h2>
+        {% if pick.category != "Place" %}
+          <em>{{ pick.title }}</em>
+        {% else %}
+          {{ pick.title }}
+        {% endif %}
+
+        {% if pick.year %}
+          ({{ pick.year }})
+        {% endif %}
+      </h2>
+
+      <p class="shelf-entry-card__creator">
+        {{ pick.creator }} · {{ pick.role }}
+      </p>
+
+      <p>
+        {{ pick.description }}
+      </p>
+
+    </article>
+
+  {% endfor %}
+
+</div>
+
+
+<section class="archive-section wrap">
+
+  <div class="section-heading">
+    <h2>Archive</h2>
+  </div>
+
+  <div class="archive-list">
+
+    {% for item in collections.shelf | reverse %}
+
+      <a class="archive-row" href="{{ item.url }}">
+        <span>{{ item.data.month }} {{ item.data.year }}</span>
+        <span>→</span>
+      </a>
+
+    {% endfor %}
+
+  </div>
+
+</section>
+
+
+<div class="edition-meta wrap">
 
   <div>
-    <span class="meta-label">Published</span>
+    <h3>Published</h3>
     <p>{{ month }} {{ year }}</p>
   </div>
 
   <div>
-    <span class="meta-label">Last updated</span>
+    <h3>Updated</h3>
     <p>{{ lastUpdated }}</p>
   </div>
 
   <div>
-    <span class="meta-label">Credits</span>
+    <h3>Image Credits</h3>
     <p>
       <a href="/about/image-credits/">
-        Image credits
+        View credits →
       </a>
     </p>
   </div>
 
 </div>
-
-  </div>
-
-</article>

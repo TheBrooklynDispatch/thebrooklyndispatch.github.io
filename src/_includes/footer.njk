@@ -1,20 +1,99 @@
 <footer class="site-footer">
+
   <div class="wrap footer-grid">
+
     <div>
-      <div class="footer-brand">{{ site.name }}</div>
-      <p>{{ site.tagline }}</p>
+
+      <div class="footer-brand">
+        {{ site.name }}
+      </div>
+
+      <p>
+        {{ site.tagline }}
+      </p>
+
     </div>
+
+
     <div class="footer-links">
-      <div class="meta-label">Explore</div>
-      <a href="/film/">Film</a>
-      <a href="/books/">Books</a>
-      <a href="/notebook/">Notebook</a>
-      <a href="/shelf/">The Shelf</a>
+
+      <div class="meta-label">
+        Explore
+      </div>
+
+      <a href="/film/">
+        Film
+      </a>
+
+      <a href="/books/">
+        Books
+      </a>
+
+      <a href="/notebook/">
+        Notebook
+      </a>
+
+      <a href="/shelf/">
+        The Shelf
+      </a>
+
     </div>
-    <div class="footer-links">
-      <div class="meta-label">Publication</div>
-      <a href="/about/">About</a>
-      <a href="mailto:hello@thebrooklyndispatch.com">Contact</a>
-    </div>
+
+
+    <div class="footer-links footer-publication">
+
+  <div class="meta-label">
+    Publication
   </div>
+
+  <a href="/about/">
+    About
+  </a>
+
+  <a href="mailto:hello@thebrooklyndispatch.com">
+    Contact
+  </a>
+
+  <div class="footer-newsletter-inline">
+
+    <div class="footer-newsletter-inline__label">
+      Newsletter
+    </div>
+
+    <form
+      action="https://buttondown.com/api/emails/embed-subscribe/TheBrooklynDispatch"
+      method="post"
+      class="footer-newsletter-inline__form"
+    >
+
+      <label
+        class="sr-only"
+        for="footer-newsletter-email"
+      >
+      </label>
+
+      <input
+        id="footer-newsletter-email"
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      >
+
+      <input
+        type="hidden"
+        name="embed"
+        value="1"
+      >
+
+      <button type="submit">
+        Subscribe →
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+
 </footer>
