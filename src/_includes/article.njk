@@ -1,46 +1,100 @@
 ---
 layout: base.njk
 ---
+
 <article>
+  <div class="print-header" aria-hidden="true">
+    <strong>{{ site.name }}</strong>
+    <span>{{ site.url }}</span>
+  </div>
+
   <header class="article-header wrap">
     <div class="eyebrow">{{ format or section }}</div>
+
     <h1>{{ title }}</h1>
-    {% if dek %}<p class="article-dek">{{ dek }}</p>{% endif %}
+
+    {% if dek %}
+      <p class="article-dek">{{ dek }}</p>
+    {% endif %}
+
     <div class="article-meta">
       <span>By {{ author or site.editor }}</span>
       <span>{{ page.date | readableDate }}</span>
-      {% if readingTime %}<span>{{ readingTime }} min read</span>{% endif %}
+
+      {% if readingTime %}
+        <span>About {{ readingTime }} minutes</span>
+      {% endif %}
+
+      <button class="reading-mode-toggle" type="button" data-reading-mode>
+        Read
+      </button>
     </div>
+
     {% if trails %}
-    <div class="trail-list">
-      {% for trail in trails %}<span>{{ trail }}</span>{% endfor %}
-    </div>
+      <div class="trail-list">
+        {% for trail in trails %}
+          <span>{{ trail }}</span>
+        {% endfor %}
+      </div>
     {% endif %}
   </header>
 
   {% if hero %}
-  <figure class="article-hero wrap">
-    <img src="{{ hero }}" alt="{{ heroAlt or '' }}">
-    {% if heroCaption %}<figcaption>{{ heroCaption }}</figcaption>{% endif %}
-  </figure>
+    <figure class="article-hero wrap">
+      <img src="{{ hero }}" alt="{{ heroAlt or '' }}">
+
+      {% if heroCaption %}
+        <figcaption>{{ heroCaption }}</figcaption>
+      {% endif %}
+    </figure>
   {% endif %}
 
   <div class="article-body">
     {{ content | safe }}
 
+    {% if notes %}
+      <section class="article-notes">
+        <div class="eyebrow">Notes</div>
+
+        <ol>
+          {% for note in notes %}
+            <li id="note-{{ loop.index }}">
+              {{ note | safe }}
+            </li>
+          {% endfor %}
+        </ol>
+      </section>
+    {% endif %}
+
+    <div class="article-thanks">
+      <span>—</span>
+      <p>Thank you for reading.</p>
+    </div>
+
     {% if whereNext %}
-    <section class="where-next">
-      <div class="eyebrow">Where Next</div>
-      <div class="where-next__grid">
-        {% for item in whereNext %}
-        <a class="where-next__item" href="{{ item.url or '#' }}">
-          <span class="meta-label">{{ item.type }}</span>
-          <strong>{{ item.title }}</strong>
-          {% if item.note %}<span>{{ item.note }}</span>{% endif %}
-        </a>
-        {% endfor %}
-      </div>
-    </section>
+      <section class="where-next">
+        <div class="eyebrow">Where Next</div>
+
+        <div class="where-next__grid">
+          {% for item in whereNext %}
+            <a class="where-next__item" href="{{ item.url or '#' }}">
+              <span class="meta-label">{{ item.type }}</span>
+
+              <strong>{{ item.title }}</strong>
+
+              {% if item.note %}
+                <span class="where-next__credit">{{ item.note }}</span>
+              {% endif %}
+
+              {% if item.why %}
+                <p class="where-next__why">{{ item.why }}</p>
+              {% endif %}
+
+              <span class="where-next__arrow">→</span>
+            </a>
+          {% endfor %}
+        </div>
+      </section>
     {% endif %}
   </div>
 </article>

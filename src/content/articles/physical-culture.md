@@ -1,3 +1,7 @@
+notes:
+  - 'Walter Benjamin, "The Work of Art in the Age of Mechanical Reproduction."'
+  - "Add another source or aside here."
+
 ---
 layout: article.njk
 title: Why Physical Culture Still Matters
@@ -15,17 +19,24 @@ whereNext:
   - type: Watch
     title: Perfect Days
     note: Wim Wenders, 2023
+    why: A quieter companion piece about routine, attention and finding meaning in ordinary things.
     url: "#"
+
   - type: Read
     title: On Keeping a Notebook
     note: Joan Didion
+    why: A different argument for why preserving the small details of a life matters.
     url: "#"
+
   - type: Listen
     title: Blue
     note: Joni Mitchell
+    why: A record that rewards the kind of deliberate, start-to-finish attention this essay argues for.
     url: "#"
+
   - type: Discuss
     title: Does convenience make culture easier to forget?
+    why: The question at the heart of the essay.
     url: "#"
 ---
 Up until recently, I didn't want to be materialistic. I didn't see the point in buying things I could access digitally. Books, films, music. Everything was available instantly, cheaply and almost invisibly.
