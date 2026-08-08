@@ -5,7 +5,8 @@
   "description": "The Brooklyn Dispatch",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "publish": "npm run build && git add . && git commit -m \"Site update\" && git push"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6"
