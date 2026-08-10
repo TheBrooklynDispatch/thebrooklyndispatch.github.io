@@ -1,9 +1,10 @@
 ---
 layout: article.njk
-title: Minotaur: The Coldest Film at Cannes
-dek: Andrey Zvyagintsev's Grand Prix winner is a masterclass in precision and restraint.
+title: "Minotaur: The Coldest Film at Cannes"
+dek: "Andrey Zvyagintsev's Grand Prix winner is a masterclass in precision, restraint and trust."
 date: 2026-08-09
 category: Film
+image: /assets/images/articles/minotaur.jpg
 tags:
   - film
   - cannes
@@ -13,8 +14,6 @@ permalink: /film/minotaur-the-coldest-film-at-cannes/
 ---
 
 ![Still from *Minotaur*](/assets/images/articles/minotaur.jpg)
-
-Minotaur: The Coldest Film at Cannes
 
 Cold has become one of our favourite words for calculated control. It describes someone operating with complete precision: effortless, deliberate and entirely detached. I cannot think of a better word for Andrey Zvyagintsev's latest feature.
 

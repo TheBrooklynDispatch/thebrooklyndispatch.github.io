@@ -10,39 +10,102 @@ eleventyExcludeFromCollections: true
 
 {% if latest %}
 
-  {{ latest.templateContent | safe }}
+<section class="shelf-intro">
 
-  <section class="archive-section wrap">
+  <p class="shelf-kicker">
+    {{ latest.data.month }} {{ latest.data.year }}
+  </p>
 
-    <div class="section-heading">
-      <h2>Archive</h2>
-    </div>
+  <h1>On the Shelf</h1>
 
-    <div class="archive-list">
+  {% if latest.data.intro %}
+    <p class="shelf-description">
+      {{ latest.data.intro }}
+    </p>
+  {% endif %}
 
-      {% for item in collections.shelf | reverse %}
+</section>
 
-        <a class="archive-row" href="{{ item.url }}">
-          <span>{{ item.data.month }} {{ item.data.year }}</span>
-          <span>→</span>
-        </a>
 
-      {% endfor %}
+<div class="shelf-entry-grid">
 
-    </div>
+  {% for pick in latest.data.picks %}
 
-  </section>
+    <article class="shelf-entry-card">
+
+      <div class="meta-label">
+        {{ pick.category }}
+      </div>
+
+      <figure>
+        <img
+          src="{{ pick.image }}"
+          alt="{{ pick.alt }}">
+      </figure>
+
+      <h2>
+
+        {% if pick.category != "Place" %}
+          <em>{{ pick.title }}</em>
+        {% else %}
+          {{ pick.title }}
+        {% endif %}
+
+        {% if pick.year %}
+          ({{ pick.year }})
+        {% endif %}
+
+      </h2>
+
+      <p class="shelf-entry-card__creator">
+        {{ pick.creator }}
+        {% if pick.role %}
+          · {{ pick.role }}
+        {% endif %}
+      </p>
+
+      <p>
+        {{ pick.description }}
+      </p>
+
+    </article>
+
+  {% endfor %}
+
+</div>
+
+
+<section class="archive-section wrap">
+
+  <div class="section-heading">
+    <h2>Archive</h2>
+  </div>
+
+  <div class="archive-list">
+
+    {% for item in collections.shelf | reverse %}
+
+      <a class="archive-row" href="{{ item.url }}">
+        <span>{{ item.data.month }} {{ item.data.year }}</span>
+        <span>→</span>
+      </a>
+
+    {% endfor %}
+
+  </div>
+
+</section>
 
 {% else %}
 
-  <section class="section-intro wrap">
+<section class="section-intro wrap">
 
-    <h1>On the Shelf</h1>
+  <h1>On the Shelf</h1>
 
-    <p>
-      No Shelf editions have been published yet.
-    </p>
+  <p>
+    No Shelf editions have been published yet.
+  </p>
 
-  </section>
+</section>
 
 {% endif %}

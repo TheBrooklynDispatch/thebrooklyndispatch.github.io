@@ -1,4 +1,19 @@
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addCollection("articlesByDate", function(collectionApi) {
+  return collectionApi
+    .getFilteredByTag("articles")
+    .sort((a, b) => b.date - a.date);
+});
+
+eleventyConfig.addFilter("sortByPublishedDate", function(items) {
+  return [...items].sort((a, b) => {
+    const dateA = new Date(a.data.date || a.date);
+    const dateB = new Date(b.data.date || b.date);
+
+    return dateB - dateA;
+  });
+});
+
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
