@@ -31,8 +31,6 @@ I tracked down all 41 titles across Cannes’s Official [Competition and Un Cert
 
 ## In Competition
 
-## In Competition
-
 <div class="article-table">
 <table>
 <thead>

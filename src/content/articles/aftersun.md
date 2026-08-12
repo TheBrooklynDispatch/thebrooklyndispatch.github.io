@@ -2,7 +2,7 @@
 layout: article.njk
 title: "After Aftersun"
 dek: "Three years after Charlotte Wells’ watershed debut, a new wave of filmmakers is abandoning the mechanics of the flashback to let memory behave like memory."
-date: 2026-08-10
+date: 2026-08-09
 category: Film
 image: /assets/images/articles/aftersun.jpg
 tags:
