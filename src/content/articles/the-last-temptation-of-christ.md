@@ -12,7 +12,7 @@ tags:
   - nolan
   - odyssey
   - the last temptation of christ
-permalink: /film/minotaur-the-coldest-film-at-cannes/
+permalink: /film/the-last-temptation-of-christ/
 ---
 
 
