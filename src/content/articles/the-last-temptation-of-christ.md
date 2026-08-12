@@ -8,13 +8,15 @@ image: /assets/images/articles/temptation.jpg
 tags:
   - film
   - scorsese
-  - review
+  - essay
+  - criticism
   - nolan
   - odyssey
   - the last temptation of christ
 permalink: /film/the-last-temptation-of-christ/
 ---
 
+![Still from *The Last Temptation of Christ*](/assets/images/articles/temptation.jpg)
 
 
 I watched The Last Temptation of Christ (Martin Scorsese, 1988) for the first time this week. I expected a film about faith, doubt and the humanity of Jesus. I did not expect to spend so much of it thinking about The Odyssey (Christopher Nolan, 2026).
