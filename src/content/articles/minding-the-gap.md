@@ -10,7 +10,7 @@ tags:
   - criticism
   - minding the gap
   - bing liu
-permalink: /film/minding the gap
+permalink: /film/minding-the-gap/
 ---
 
 ![Still from *Minding the Gap*](/assets/images/articles/minding.jpg)
