@@ -12,7 +12,7 @@ tags:
   - review
   - matt johnson
   - tony
-permalink: /film/tony
+permalink: /film/tony/
 ---
 
 ![Still from *Tony*](/assets/images/articles/tony.jpg)
