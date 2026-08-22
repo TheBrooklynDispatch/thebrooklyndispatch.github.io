@@ -58,6 +58,21 @@ permalink: /film/
             </p>
           {% endif %}
 
+          {% if article.data.stars %}
+            <div class="article-rating article-rating--small">
+              {% if article.data.stars == 5 %}★★★★★{% endif %}
+              {% if article.data.stars == 4.5 %}★★★★½{% endif %}
+              {% if article.data.stars == 4 %}★★★★{% endif %}
+              {% if article.data.stars == 3.5 %}★★★½{% endif %}
+              {% if article.data.stars == 3 %}★★★{% endif %}
+              {% if article.data.stars == 2.5 %}★★½{% endif %}
+              {% if article.data.stars == 2 %}★★{% endif %}
+              {% if article.data.stars == 1.5 %}★½{% endif %}
+              {% if article.data.stars == 1 %}★{% endif %}
+              <span class="article-rating__out-of">{{ article.data.stars }}/5</span>
+            </div>
+          {% endif %}
+
           <a class="text-link" href="{{ article.url }}">
             Read →
           </a>
@@ -71,3 +86,4 @@ permalink: /film/
   </div>
 
 </div>
+```

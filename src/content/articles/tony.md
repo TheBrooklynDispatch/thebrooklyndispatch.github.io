@@ -3,6 +3,7 @@ layout: article.njk
 title: "The Writer in the Kitchen"
 dek: "Tony makes for an entertaining Bourdain biopic, while leaving its sweetest irony unexplored."
 date: 2026-08-21
+stars: 3
 category: Film
 image: /assets/images/articles/tony.jpg
 tags:

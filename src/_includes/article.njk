@@ -17,6 +17,21 @@ layout: base.njk
       <p class="article-dek">{{ dek }}</p>
     {% endif %}
 
+    {% if stars %}
+      <div class="article-rating">
+        {% if stars == 5 %}★★★★★{% endif %}
+        {% if stars == 4.5 %}★★★★½{% endif %}
+        {% if stars == 4 %}★★★★{% endif %}
+        {% if stars == 3.5 %}★★★½{% endif %}
+        {% if stars == 3 %}★★★{% endif %}
+        {% if stars == 2.5 %}★★½{% endif %}
+        {% if stars == 2 %}★★{% endif %}
+        {% if stars == 1.5 %}★½{% endif %}
+        {% if stars == 1 %}★{% endif %}
+        <span class="article-rating__out-of">{{ stars }}/5</span>
+      </div>
+    {% endif %}
+
     <div class="article-meta">
       <span>By {{ author or site.editor }}</span>
       <span>{{ page.date | readableDate }}</span>

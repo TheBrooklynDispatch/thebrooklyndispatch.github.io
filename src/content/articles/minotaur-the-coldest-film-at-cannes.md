@@ -5,6 +5,7 @@ dek: "Andrey Zvyagintsev's Grand Prix winner is a masterclass in precision, rest
 date: 2026-08-09
 category: Film
 image: /assets/images/articles/minotaur.jpg
+stars: 4.5
 tags:
   - film
   - cannes

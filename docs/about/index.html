@@ -1,53 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About — The Brooklyn Dispatch</title>
-  <meta name="description" content="About The Brooklyn Dispatch and its contributors.">
-  <link rel="canonical" href="https://thebrooklyndispatch.com/about/">
-  <meta property="og:title" content="About">
-  <meta property="og:description" content="About The Brooklyn Dispatch and its contributors.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://thebrooklyndispatch.com/about/">
-  <link rel="stylesheet" href="/assets/styles.css">
-</head>
-<body>
-  <div class="reading-progress" data-reading-progress></div>
-  <header class="masthead">
-  <div class="wrap masthead__inner">
+```njk
+---
+layout: base.njk
+title: About
+description: About The Brooklyn Dispatch and its contributors.
+---
 
-    <a class="masthead__brand" href="/">
-      The Brooklyn Dispatch
-    </a>
-
-    <div class="masthead__tagline">
-      Films. Books. Music.
-    </div>
-
-    <button
-      class="nav-toggle"
-      type="button"
-      aria-expanded="false"
-      aria-controls="primary-nav"
-    >
-      Menu
-    </button>
-
-    <nav
-      class="primary-nav"
-      id="primary-nav"
-      aria-label="Primary"
-    >
-      <a href="/#latest">Latest</a>
-      <a href="/film/">Films</a>
-      <a href="/shelf/">Shelf</a>
-      <a href="/about/">About</a>
-    </nav>
-
-  </div>
-</header>
-  <main>
 <section class="contributors-section wrap">
 
   <div class="contributors-header">
@@ -78,10 +35,15 @@
     <div class="contributor-profile__bio">
 
       <p>
-        I've always been interested in the ways films, books and music shape
-        how we experience places, conversations and everyday life. The Brooklyn Dispatch grew naturally from that habit. It is a place
-        to collect essays, notebooks and an evolving shelf of films, books,
-        music and places that continue the conversation.
+        Steve founded The Brooklyn Dispatch as an independent home for film criticism, festival coverage and writing about the culture surrounding movies. His interest has always been in the way films continue beyond the cinema, shaping conversations, places and everyday life.
+      </p>
+
+      <p>
+        Based in Brooklyn, Steve writes about new releases alongside older films worth returning to, with occasional detours into books, music and the places that find their way into those conversations. He has previously covered the Cannes Film Festival and other U.S.-based festivals.
+      </p>
+
+      <p>
+        When he isn't watching or writing about films, Steve can usually be found at a cinema somewhere in New York, looking through a record store or playing soccer in North Brooklyn.
       </p>
 
     </div>
@@ -96,16 +58,17 @@
         Letterboxd
       </a>
 
-
-
       <span>·</span>
 
+      <a
+        href="https://x.com/bklyndispatch"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        X
+      </a>
 
-<a href="https://x.com/bklyndispatch" target="_blank" rel="noopener noreferrer">
-  X
-</a>
-<span>·</span>
-
+      <span>·</span>
 
       <a href="mailto:Steve@TheBrooklynDispatch.com">
         Steve@TheBrooklynDispatch.com
@@ -116,98 +79,4 @@
   </article>
 
 </section>
-</main>
-  <footer class="site-footer">
-
-  <div class="wrap footer-grid">
-
-    <div>
-
-      <div class="footer-brand">
-        The Brooklyn Dispatch
-      </div>
-
-      <p>
-        Films. Books. Music.
-      </p>
-
-    </div>
-
-
-    <div class="footer-links">
-
-      <div class="meta-label">
-        Explore
-      </div>
-
-      <a href="/film/">
-        Film
-      </a>
-
-      <a href="/shelf/">
-        The Shelf
-      </a>
-
-    </div>
-
-
-    <div class="footer-links footer-publication">
-
-  <div class="meta-label">
-    Publication
-  </div>
-
-  <a href="/about/">
-    About
-  </a>
-
-  <a href="mailto:hello@thebrooklyndispatch.com">
-    Contact
-  </a>
-
-  <div class="footer-newsletter-inline">
-
-    <div class="footer-newsletter-inline__label">
-      Newsletter
-    </div>
-
-    <form
-      action="https://buttondown.com/api/emails/embed-subscribe/TheBrooklynDispatch"
-      method="post"
-      class="footer-newsletter-inline__form"
-    >
-
-      <label
-        class="sr-only"
-        for="footer-newsletter-email"
-      >
-      </label>
-
-      <input
-        id="footer-newsletter-email"
-        type="email"
-        name="email"
-        placeholder="Enter your email"
-        required
-      >
-
-      <input
-        type="hidden"
-        name="embed"
-        value="1"
-      >
-
-      <button type="submit">
-        Subscribe →
-      </button>
-
-    </form>
-
-  </div>
-
-</div>
-
-</footer>
-  <script src="/assets/site.js"></script>
-</body>
-</html>
+```

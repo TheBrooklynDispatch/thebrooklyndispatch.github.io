@@ -46,7 +46,7 @@ module.exports = function(eleventyConfig) {
     }).format(dateObj);
   });
 
-
+  
   return {
     dir: {
       input: "src",

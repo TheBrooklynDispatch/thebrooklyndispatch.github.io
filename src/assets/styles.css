@@ -2335,3 +2335,99 @@ article h2 {
     gap: 48px;
   }
 }
+
+.article-rating {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin: 0.6rem 0 1rem;
+}
+
+.article-rating--small {
+  font-size: 1.15rem;
+  margin: 0.5rem 0 0.8rem;
+}
+
+.article-rating__out-of {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.article-rating__out-of {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+  opacity: 0.55;
+}
+
+.home-writing-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.home-writing-card--compact h3 {
+  font-size: 1.25rem;
+}
+
+.home-writing-card--compact p {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 800px) {
+  .home-writing-grid--three {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home-writing-grid.home-writing-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.home-writing-card--compact .home-writing-card__image {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.home-writing-card--compact h3 {
+  font-size: 1.2rem;
+}
+
+.home-writing-card--compact p {
+  font-size: 0.92rem;
+}
+
+@media (max-width: 800px) {
+  .home-writing-grid.home-writing-grid--three {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home-writing-grid.home-writing-grid--three {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.home-writing-grid--three .home-writing-card__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.home-writing-grid--three .home-writing-card h3 {
+  font-size: 1.15rem;
+}
+
+.home-writing-grid--three .home-writing-card p {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .home-writing-grid.home-writing-grid--three {
+    grid-template-columns: 1fr;
+  }
+}
