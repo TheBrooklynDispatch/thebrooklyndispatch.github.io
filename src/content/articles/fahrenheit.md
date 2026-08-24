@@ -10,7 +10,7 @@ tags:
   - criticism
   - fahrenheit 9-11
   - michael moore
-permalink: /film/fahrenheit-9-11
+permalink: /film/fahrenheit-9-11/
 ---
 
 ![Still from *Fahrenheit 9-11*](/assets/images/articles/fahrenheit.jpg)
