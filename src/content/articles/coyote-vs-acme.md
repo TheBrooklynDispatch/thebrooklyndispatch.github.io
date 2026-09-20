@@ -3,7 +3,7 @@ layout: article.njk
 title: "Coyote vs. Acme Has a Great Case and Nothing to Argue"
 dek: "A brilliant premise, some inspired jokes, and a courtroom comedy that never finds anything worth fighting for."
 date: 2026-09-20
-rating: 1.5
+stars: 1.5
 category: Film
 image: /assets/images/articles/coyote.jpg
 tags:
@@ -14,6 +14,8 @@ tags:
   - warner bros
 permalink: /film/coyote-vs-acme/
 ---
+
+![Still from *Coyote vs. Acme*](/assets/images/articles/coyote.jpg)
 
 There is something almost too perfect about *Coyote vs. Acme* finally reaching theaters. A film about a beloved cartoon character taking on the corporation that has spent decades supplying the instruments of his destruction was itself nearly destroyed by the corporation that made it. The irony hardly needs underlining.
 
