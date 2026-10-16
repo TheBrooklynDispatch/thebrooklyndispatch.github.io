@@ -1,4 +1,3 @@
-
 ---
 layout: article.njk
 title: "Who Gets to Name a Renaissance?"
@@ -16,14 +15,9 @@ tags:
 permalink: /film/once-upon-a-time-in-harlem/
 ---
 
+![Once Upon a Time in Harlem](/assets/images/articles/harlem.jpg)
 
----
-title: "Who Gets to Name a Renaissance?"
-subtitle: "William Greaves’s extraordinary archive shows how history is made not from consensus, but from memory, disagreement, and the people who lived it."
-image: harlem.jpg
----
-
-![Once Upon a Time in Harlem](harlem.jpg)
+<small>Image courtesy of NEON.</small>
 
 Once Upon a Time in Harlem begins with an invitation. As Duke Ellington’s “Black Beauty” plays, text welcomes us to a 1972 cocktail party at Ellington’s Harlem home, where William Greaves has assembled artists and intellectuals who helped shape what we now call the Harlem Renaissance. Soon they begin filing through the door: writers, painters, musicians, photographers and activists, dressed for the occasion and greeting people they have not seen in years. There is something almost disorienting about watching them arrive. Names that have hardened into cultural history are suddenly people again—taking off coats, finding seats, catching up with old friends. Richard Bruce Nugent eventually offers perhaps the film’s simplest expression of this divide between history and experience: “While you’re living it, it is the now.” Once Upon a Time in Harlem spends the next hundred minutes exploring the strange distance between those two things: living through a cultural moment and having someone, later, decide what it meant.
 
@@ -36,5 +30,6 @@ The film’s form keeps returning to that gap between the historical figure and 
 That process of making sense extends beyond the people on screen to the existence of Once Upon a Time in Harlem itself. William Greaves never finished the film in his lifetime. The footage survived, protected and revisited over decades. After William’s death in 2014, his wife and longtime creative partner, Louise Archambault Greaves, continued working to realize the project. Following her death in 2023, their son David, who had operated one of the cameras at the original gathering, completed the film with producer Liani Greaves, his daughter, and co-producer Anne de Mare. Early in the film, an archival recording catches William breaking from a reading to speak directly to his son: “use that reading, David.” Heard now, in a movie David ultimately brought to completion, the aside lands differently. A film concerned with how one generation hands its history to another turns out to have traveled in exactly the same way.
 
 That may be the film’s most moving answer to its own question. Who gets to name a renaissance? Historians will name it; institutions will preserve it; later generations will argue over its borders. But before any of that can happen, somebody has to notice that the thing in front of them is worth saving. William Greaves did that in an apartment in Harlem in 1972, pointing cameras toward people who were still debating what their own past meant. Half a century later, his family did it again by returning to the material he left behind. Once Upon a Time in Harlem is an extraordinary record of a major chapter in American culture, but its lesson about preservation operates at the smallest scale too. Cultural history often begins as family history: a photograph kept in a drawer, a voice saved on tape, a reel of film that someone refuses to throw away. We cannot always know when we are living through history. We can decide, however, that the stories closest to us are worth keeping.
+
 
 <small>Image courtesy of NEON.</small>
