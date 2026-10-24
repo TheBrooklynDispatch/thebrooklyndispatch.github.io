@@ -7,8 +7,8 @@ lastUpdated: 24 October 2026
 permalink: /shelf/2026/october/
 tags:
   - shelf
-  
-intro: Four selections from the past month. A film that brought me back to cinema, a graphic memoir about growing up between worlds, music for the colder weather, and a Brooklyn shop that makes a case for personal taste. No rankings, no scores, no algorithm.
+
+intro: Four selections from the past month. A film that brought me back to cinema, a graphic memoir about growing up between worlds, music for the colder weather, and a Brooklyn shop that makes a case for personal taste. 
 
 picks:
   - category: Film
