@@ -19,7 +19,7 @@ picks:
     image: /assets/images/shelf/2026/september/2026-09-film-beginners.jpg
     alt: Still from Beginners
     description: >
-      We tend to think about the models of love we inherit in childhood as though they are fixed. Beginners asks what happens when that model is rewritten once you are already an adult. As Oliver watches his father embrace love and life anew after coming out at 75, his understanding of his parents' marriage begins to change — and, with it, his understanding of his own capacity for intimacy. A deeply humane film about the possibility that it is never too late to revise what we think we know about love.
+      We tend to think about the models of love we inherit in childhood as though they are fixed. Beginners asks what happens when that model is rewritten once you are already an adult. As Oliver watches his father embrace love and life anew after coming out at 75, his understanding of his parents' marriage begins to change — and, with it, his understanding of his own capacity for intimacy. A deeply humane film about the possibility that it is never too late to revise what we think we know about love. Something I may revisit with more words once I watch 20th Century Women (which I'm hoping to do in the next month).
 
   - category: Book
     title: Faith, Hope and Carnage

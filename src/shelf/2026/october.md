@@ -1,4 +1,3 @@
-
 ---
 layout: shelf-entry.njk
 title: On the Shelf
