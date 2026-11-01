@@ -1,4 +1,3 @@
-
 ---
 layout: article.njk
 title: "Our Hero, Balthazar: Boys Playing Men"
